@@ -130,7 +130,7 @@ WHITE-HAT-STOAT can be used as a training platform for cybersecurity students, p
 
 The platform provides a controlled environment where participants can learn cybersecurity concepts and operational procedures.
 
-Reporting and Analytics
+# Reporting and Analytics
 
 The reporting engine enables organizations to generate security reports and operational summaries. Reports can assist with management reviews, training assessments, and security program evaluation.
 
