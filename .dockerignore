@@ -1,0 +1,85 @@
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual Environment
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs and Data
+logs/
+*.log
+*.db
+*.sqlite
+*.sqlite3
+data/
+*.pid
+*.lock
+
+# Config (but keep default config)
+config/local.json
+config/*.local.json
+*.env
+.env.*
+!.env.example
+
+# Tests
+tests/
+*.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# Documentation
+docs/
+*.md
+!README.md
+*.rst
+
+# OS
+Thumbs.db
+desktop.ini
+
+# Docker
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# CI/CD
+.gitlab-ci.yml
+.github/
+.gitlab/
+
+# Artifacts
+*.exe
+*.msi
+*.deb
+*.rpm
+*.dmg

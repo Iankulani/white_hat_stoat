@@ -1,0 +1,157 @@
+version: '3.8'
+
+services:
+  white-hat-stoat:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: white-hat-stoat
+    hostname: stoat
+    restart: unless-stopped
+    ports:
+      - "5000:5000"      # Web Dashboard
+      - "5555:5555"      # Callback Server
+      - "8080:8080"      # Phishing Server
+      - "4444:4444"      # Keylogger Server
+      - "2222:22"        # SSH (alternative port)
+    volumes:
+      - ./data:/var/lib/white-hat-stoat
+      - ./logs:/var/log/white-hat-stoat
+      - ./config:/etc/white-hat-stoat
+      - ./payloads:/opt/white-hat-stoat/payloads
+      - ./reports:/opt/white-hat-stoat/reports
+      - /var/run/docker.sock:/var/run/docker.sock:ro  # For Docker control
+    environment:
+      - CONFIG_DIR=/etc/white-hat-stoat
+      - LOG_DIR=/var/log/white-hat-stoat
+      - DATA_DIR=/var/lib/white-hat-stoat
+      - STOAT_ENVIRONMENT=production
+      - STOAT_LOG_LEVEL=INFO
+      - PYTHONUNBUFFERED=1
+    networks:
+      - stoat-network
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+      - SYS_ADMIN
+    security_opt:
+      - apparmor:unconfined
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 4G
+        reservations:
+          cpus: '1'
+          memory: 2G
+
+  # Optional: PostgreSQL for production database
+  postgres:
+    image: postgres:15
+    container_name: stoat-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: stoat
+      POSTGRES_USER: stoat
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-stoat2024}
+      POSTGRES_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:-root2024}
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - stoat-network
+
+  # Optional: Redis for caching and message brokering
+  redis:
+    image: redis:7-alpine
+    container_name: stoat-redis
+    restart: unless-stopped
+    command: redis-server --appendonly yes --requirepass ${REDIS_PASSWORD:-stoat2024}
+    volumes:
+      - ./redis-data:/data
+    ports:
+      - "6379:6379"
+    networks:
+      - stoat-network
+
+  # Optional: Prometheus for monitoring
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: stoat-prometheus
+    restart: unless-stopped
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./prometheus-data:/prometheus
+    ports:
+      - "9090:9090"
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/usr/share/prometheus/console_libraries'
+      - '--web.console.templates=/usr/share/prometheus/consoles'
+    networks:
+      - stoat-network
+
+  # Optional: Grafana for visualization
+  grafana:
+    image: grafana/grafana:latest
+    container_name: stoat-grafana
+    restart: unless-stopped
+    volumes:
+      - ./grafana-data:/var/lib/grafana
+      - ./grafana-provisioning:/etc/grafana/provisioning
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_PASSWORD:-admin}
+      - GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-simple-json-datasource
+    ports:
+      - "3000:3000"
+    depends_on:
+      - prometheus
+    networks:
+      - stoat-network
+
+  # Optional: Elasticsearch for log storage
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.8.0
+    container_name: stoat-elasticsearch
+    restart: unless-stopped
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - ES_JAVA_OPTS=-Xms512m -Xmx512m
+    volumes:
+      - ./elasticsearch-data:/usr/share/elasticsearch/data
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    networks:
+      - stoat-network
+
+  # Optional: Kibana for log visualization
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.8.0
+    container_name: stoat-kibana
+    restart: unless-stopped
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    ports:
+      - "5601:5601"
+    depends_on:
+      - elasticsearch
+    networks:
+      - stoat-network
+
+networks:
+  stoat-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+
+volumes:
+  postgres-data:
+  redis-data:
+  prometheus-data:
+  grafana-data:
+  elasticsearch-data:

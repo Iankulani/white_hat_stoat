@@ -1,0 +1,92 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "white-hat-stoat"
+version = "1.0.0"
+description = "Advanced Cybersecurity Command & Control Platform"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "Proprietary"}
+authors = [
+    {name = "Advanced Security Framework", email = "security@white-hat-stoat.local"},
+]
+keywords = ["security", "pentesting", "command-and-control", "monitoring", "payloads"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Information Technology",
+    "Topic :: Security",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/white-hat-stoat/white-hat-stoat"
+Documentation = "https://docs.white-hat-stoat.local"
+Repository = "https://github.com/white-hat-stoat/white-hat-stoat.git"
+Issues = "https://github.com/white-hat-stoat/white-hat-stoat/issues"
+
+[project.scripts]
+white-hat-stoat = "white_hat_stoat:main"
+stoat-cli = "white_hat_stoat:main"
+
+[tool.black]
+line-length = 100
+target-version = ['py37', 'py38', 'py39', 'py310', 'py311']
+
+[tool.isort]
+profile = "black"
+line_length = 100
+multi_line_output = 3
+include_trailing_comma = true
+
+[tool.flake8]
+max-line-length = 100
+extend-ignore = ["E203", "W503"]
+
+[tool.mypy]
+python_version = "3.7"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-ra -q --strict-markers"
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+markers = [
+    "unit: Unit tests",
+    "integration: Integration tests",
+    "slow: Slow running tests",
+]
+
+[tool.coverage.run]
+source = ["white_hat_stoat"]
+omit = ["*/tests/*", "*/__pycache__/*", "*/venv/*", "*/site-packages/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "if __name__ == .__main__.:",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if False:",
+    "if TYPE_CHECKING:",
+]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+version = "1.0.0"
+tag_format = "v$version"
+bump_message = "chore(release): bump version to $version"
+version_files = [
+    "white_hat_stoat.py:VERSION",
+    "setup.py:version",
+    "pyproject.toml:version",
+]
