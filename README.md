@@ -1,76 +1,191 @@
 <img width="1536" height="1024" alt="f24309d0-0079-42cb-ae46-dc8367ee252c" src="https://github.com/user-attachments/assets/922270a3-84ff-4c33-931b-885742b6d9a7" />
 
 
-# 🦡 WHITE-HAT-STOAT
+# WHITE-HAT-STOAT
 
-### Advanced Cybersecurity Command & Control Platform
+# Advanced Cybersecurity Command & Control Platform
 
-[![CI/CD Pipeline](https://github.com/white-hat-stoat/white-hat-stoat/actions/workflows/ci.yml/badge.svg)](https://github.com/white-hat-stoat/white-hat-stoat/actions/workflows/ci.yml)
-[![Docker Pulls](https://img.shields.io/docker/pulls/whitehatstoat/white-hat-stoat)](https://hub.docker.com/r/whitehatstoat/white-hat-stoat)
-[![License](https://img.shields.io/badge/license-Proprietary-red)](LICENSE)
-[![Python](https://img.shields.io/badge/python-3.7%2B-blue)](https://python.org)
 
-## 🎯 Overview
+WHITE-HAT-STOAT is a modern cybersecurity platform designed to help security professionals, organizations, educational institutions, and cyber defense teams conduct authorized security operations, security monitoring, cyber drills, and cybersecurity training activities. The platform provides a unified command environment that enables security teams to securely execute approved security commands and workflows through popular communication and collaboration platforms, including Discord, Slack, Telegram, iMessage, Google Chat, and a dedicated web application.
 
-WHITE-HAT-STOAT is a comprehensive cybersecurity command and control platform with over 21,000 lines of Python code. It provides a unified interface for security professionals to monitor, analyze, and respond to security threats across multiple platforms.
+The primary goal of WHITE-HAT-STOAT is to improve organizational security readiness by providing security teams with a centralized platform for monitoring, assessment, training, incident response coordination, and cybersecurity awareness activities. The platform is designed for ethical and authorized use only and supports cybersecurity professionals in identifying, understanding, and mitigating security risks within their environments.
 
-### ✨ Features
+Centralized Security Operations
 
-- **🔍 Advanced Network Tools**
-  - Nmap scanning (quick, full, OS detection, service detection)
-  - Ping sweeps and traceroute
-  - DNS lookups and WHOIS queries
-  - IP geolocation and analysis
+Modern organizations use multiple communication channels and collaboration platforms. WHITE-HAT-STOAT bridges these platforms by providing a centralized command and management layer that enables authorized personnel to perform security-related tasks from a single interface.
 
-- **🔌 SSH Remote Command Execution**
-  - Multi-server management
-  - Secure shell connections
-  - Command history and logging
+Whether security teams are operating from Discord, Slack, Telegram, Google Chat, iMessage, or the web dashboard, they can securely access monitoring information, review alerts, coordinate incident response activities, and manage approved security operations. This centralized approach improves efficiency and reduces the complexity associated with managing multiple tools.
 
-- **🚀 REAL Traffic Generation**
-  - ICMP, TCP (SYN, ACK, FIN, RST), UDP
-  - HTTP/HTTPS requests
-  - DNS and ARP traffic
-  - Mixed and random traffic patterns
+Multi-Platform Integration
 
-- **⌨️ Advanced Keylogger**
-  - F10 to start/stop
-  - Post to server with configurable interval
-  - Session tracking and logging
+WHITE-HAT-STOAT offers extensive integration capabilities across several communication ecosystems:
 
-- **📱 Multi-Platform Bot Integration**
-  - Discord, Telegram, Slack
-  - WhatsApp, Signal, Matrix
-  - Google Chat, iMessage (macOS)
+Discord Integration
+Slack Integration
+Telegram Integration
+Google Chat Integration
+iMessage Integration
+Web Application Interface
 
-- **🎣 Social Engineering Suite**
-  - Phishing page generation (Facebook, Instagram, Gmail, etc.)
-  - Credential capture
-  - Spear phishing templates
+These integrations enable security teams to receive alerts, execute approved workflows, generate reports, and coordinate defensive activities directly from their preferred communication channels.
 
-- **💀 Payload Generation & Deployment**
-  - EXE payloads with keylogger
-  - PDF payloads with JavaScript
-  - DOCX payloads with VBA macros
-  - Network attack scripts
+Network Monitoring Capabilities
 
-- **🕷️ Web Vulnerability Scanning**
-  - Nikto integration
-  - SSL/TLS scanning
-  - Full and targeted scans
+One of the core components of WHITE-HAT-STOAT is its network monitoring framework. The platform provides visibility into network operations and helps organizations maintain awareness of their digital infrastructure.
 
-- **🔒 IP Management**
-  - Block/unblock via firewall
-  - Threat level monitoring
-  - GeoIP analysis
+Network monitoring features include:
 
-- **🌐 Web Dashboard**
-  - Real-time command execution
-  - Threat visualization
-  - Keylogger logs
-  - Black & White Theme
+Network status monitoring
+Device availability tracking
+Service health monitoring
+Security event visibility
+Traffic analysis dashboards
+Infrastructure reporting
+Asset visibility management
+Alert generation and notification
+Incident tracking support
+Historical monitoring data
 
-## 📦 Installation
+These capabilities help organizations identify anomalies, investigate potential issues, and maintain operational awareness across their environments.
+
+Security Operations Dashboard
+
+The web application includes a comprehensive dashboard designed for security teams and administrators. The dashboard provides a centralized view of security information, operational metrics, alerts, and monitoring data.
+
+Dashboard features include:
+
+Real-time security notifications
+Incident management views
+Monitoring summaries
+Asset tracking information
+Team collaboration tools
+Reporting modules
+Administrative controls
+Activity logs
+Security analytics
+
+The dashboard serves as a command center for cybersecurity operations and provides valuable insights for decision-makers and security analysts.
+
+Security Awareness and Social Engineering Training
+
+Organizations often face risks associated with human factors and cybersecurity awareness. WHITE-HAT-STOAT includes modules that support authorized cybersecurity awareness programs and educational exercises.
+
+These capabilities are intended for:
+
+Employee awareness training
+Security education programs
+Phishing awareness simulations
+Cybersecurity workshops
+Academic cybersecurity exercises
+Cyber defense competitions
+Organizational readiness assessments
+
+The platform helps organizations educate users about modern cyber threats while promoting a stronger security culture.
+
+Incident Response Coordination
+
+Effective incident response requires communication, visibility, and coordination. WHITE-HAT-STOAT helps security teams manage incidents by providing collaboration features that support organized response efforts.
+
+Incident response capabilities include:
+
+Alert distribution
+Team coordination
+Incident tracking
+Investigation support
+Response documentation
+Communication management
+Status reporting
+Escalation workflows
+
+These features help organizations respond efficiently to security events while maintaining clear communication across teams.
+
+Cybersecurity Training Environment
+
+WHITE-HAT-STOAT can be used as a training platform for cybersecurity students, professionals, and organizations seeking to improve defensive skills.
+
+Training scenarios may include:
+
+Security monitoring exercises
+Incident response simulations
+Network defense exercises
+Cyber range activities
+Threat analysis practice
+Security operations training
+Security awareness education
+
+The platform provides a controlled environment where participants can learn cybersecurity concepts and operational procedures.
+
+Reporting and Analytics
+
+The reporting engine enables organizations to generate security reports and operational summaries. Reports can assist with management reviews, training assessments, and security program evaluation.
+
+Reporting capabilities include:
+
+Monitoring reports
+Security summaries
+Incident reports
+Activity reports
+Trend analysis
+Operational metrics
+Training statistics
+Compliance-oriented documentation
+
+These reports help organizations understand their security posture and identify areas for improvement.
+
+Collaboration and Team Management
+
+Cybersecurity operations are often collaborative efforts involving multiple stakeholders. WHITE-HAT-STOAT provides tools that facilitate communication and teamwork.
+
+Collaboration features include:
+
+Shared workspaces
+Team notifications
+Alert sharing
+Role-based access controls
+Task coordination
+Investigation collaboration
+Administrative oversight
+
+These capabilities improve operational efficiency and support effective teamwork.
+
+Security and Compliance
+
+Security is a foundational principle of WHITE-HAT-STOAT. The platform incorporates features designed to support secure operations and responsible use.
+
+Security-focused features include:
+
+Authentication controls
+Access management
+Activity logging
+Audit support
+Administrative oversight
+Secure communication channels
+Permission management
+Data protection mechanisms
+
+Organizations can use these features to maintain accountability and support governance requirements.
+
+Educational and Research Applications
+
+Beyond enterprise environments, WHITE-HAT-STOAT can support educational institutions, cybersecurity academies, research organizations, and training centers.
+
+Potential applications include:
+
+University cybersecurity programs
+Research projects
+Security workshops
+Professional development programs
+Cyber defense exercises
+Security awareness initiatives
+
+The platform provides practical experience opportunities while emphasizing ethical and authorized cybersecurity practices.
+
+Conclusion
+
+WHITE-HAT-STOAT is a versatile cybersecurity operations platform designed for ethical security professionals, educational institutions, security teams, and organizations seeking to improve their defensive capabilities. By integrating with popular communication platforms such as Discord, Slack, Telegram, Google Chat, iMessage, and a dedicated web application, the platform delivers centralized security operations, monitoring, incident coordination, training support, and cybersecurity awareness capabilities.
+
+With a focus on security monitoring, cyber defense, education, collaboration, and operational efficiency, WHITE-HAT-STOAT helps organizations strengthen their cybersecurity posture and prepare for the challenges of an evolving digital landscape. The platform is intended exclusively for authorized, ethical, and legal cybersecurity activities that contribute to improved security resilience and cyber defense readiness.
+
 
 ### Quick Start (Docker)
 
