@@ -1,10 +1,25 @@
-<img width="1536" height="1024" alt="f24309d0-0079-42cb-ae46-dc8367ee252c" src="https://github.com/user-attachments/assets/922270a3-84ff-4c33-931b-885742b6d9a7" />
-
-
 # WHITE-HAT-STOAT
 
-# Advanced Cybersecurity Command & Control Platform
+<img width="1536" height="1024" alt="f24309d0-0079-42cb-ae46-dc8367ee252c" src="https://github.com/user-attachments/assets/922270a3-84ff-4c33-931b-885742b6d9a7" />
 
+[![GitHub stars](https://img.shields.io/github/stars/Iankulani/white_hat_stoat?style=for-the-badge&logo=github)](https://github.com/Iankulani/white_hat_stoat/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Iankulani/white_hat_stoat?style=for-the-badge&logo=github)](https://github.com/Iankulani/white_hat_stoat/network)
+[![GitHub watchers](https://img.shields.io/github/watchers/Iankulani/white_hat_stoat?style=for-the-badge&logo=github)](https://github.com/Iankulani/white_hat_stoat/watchers)
+[![GitHub contributors](https://img.shields.io/github/contributors/Iankulani/white_hat_stoat?style=for-the-badge&logo=github)](https://github.com/Iankulani/white_hat_stoat/graphs/contributors)
+[![GitHub last commit](https://img.shields.io/github/last-commit/Iankulani/white_hat_stoat?style=for-the-badge&logo=git)](https://github.com/Iankulani/white_hat_stoat/commits/main)
+[![Version](https://img.shields.io/badge/version-v0.1.0-blue?style=for-the-badge&logo=github)](https://github.com/Iankulani/white_hat_stoat)
+[![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)](LICENSE)
+[![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Windows%20%7C%20Android-blue?style=for-the-badge&logo=linux&logoColor=white)](https://github.com/Iankulani/white_hat_stoat)
+[![Python](https://img.shields.io/badge/python-3.8%2B-yellow?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Discord](https://img.shields.io/badge/Discord-Support-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/your-invite-link)
+[![Telegram](https://img.shields.io/badge/Telegram-Community-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/your_telegram_link)
+[![Slack](https://img.shields.io/badge/Slack-Join-4A154B?style=for-the-badge&logo=slack&logoColor=white)](https://join.slack.com/t/your-workspace/shared_invite/...)
+[![Issues](https://img.shields.io/github/issues/Iankulani/white_hat_stoat?style=for-the-badge&logo=github)](https://github.com/Iankulani/white_hat_stoat/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/Iankulani/white_hat_stoat?style=for-the-badge&logo=github)](https://github.com/Iankulani/white_hat_stoat/pulls)
+[![Repo Size](https://img.shields.io/github/repo-size/Iankulani/white_hat_stoat?style=for-the-badge&logo=github)](https://github.com/Iankulani/white_hat_stoat)
+[![Code Size](https://img.shields.io/github/languages/code-size/Iankulani/white_hat_stoat?style=for-the-badge&logo=github)](https://github.com/Iankulani/white_hat_stoat)
+
+# Advanced Cybersecurity Command & Control Platform
 
 WHITE-HAT-STOAT is a modern cybersecurity platform designed to help security professionals, organizations, educational institutions, and cyber defense teams conduct authorized security operations, security monitoring, cyber drills, and cybersecurity training activities. The platform provides a unified command environment that enables security teams to securely execute approved security commands and workflows through popular communication and collaboration platforms, including Discord, Slack, Telegram, iMessage, Google Chat, and a dedicated web application.
 
