@@ -220,3 +220,5 @@ open http://localhost:5000
 ````
 
 # Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Iankulani/white_hat_stoat&type=Date)](https://star-history.com/#Iankulani/white_hat_stoat&Date)
