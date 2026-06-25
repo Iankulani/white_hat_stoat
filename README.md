@@ -119,16 +119,16 @@ Reporting and Analytics
 
 The reporting engine enables organizations to generate security reports and operational summaries. Reports can assist with management reviews, training assessments, and security program evaluation.
 
-Reporting capabilities include:
+# Reporting capabilities include:
 
-Monitoring reports
-Security summaries
-Incident reports
-Activity reports
-Trend analysis
-Operational metrics
-Training statistics
-Compliance-oriented documentation
+* Monitoring reports
+* Security summaries
+* Incident reports
+* Activity reports
+* Trend analysis
+* Operational metrics
+* Training statistics
+* Compliance-oriented documentation
 
 These reports help organizations understand their security posture and identify areas for improvement.
 
@@ -136,15 +136,15 @@ Collaboration and Team Management
 
 Cybersecurity operations are often collaborative efforts involving multiple stakeholders. WHITE-HAT-STOAT provides tools that facilitate communication and teamwork.
 
-Collaboration features include:
+# Collaboration features include:
 
-Shared workspaces
-Team notifications
-Alert sharing
-Role-based access controls
-Task coordination
-Investigation collaboration
-Administrative oversight
+* Shared workspaces
+* Team notifications
+* Alert sharing
+* Role-based access controls
+* Task coordination
+* Investigation collaboration
+* Administrative oversight
 
 These capabilities improve operational efficiency and support effective teamwork.
 
@@ -152,16 +152,16 @@ Security and Compliance
 
 Security is a foundational principle of WHITE-HAT-STOAT. The platform incorporates features designed to support secure operations and responsible use.
 
-Security-focused features include:
+# Security-focused features include:
 
-Authentication controls
-Access management
-Activity logging
-Audit support
-Administrative oversight
-Secure communication channels
-Permission management
-Data protection mechanisms
+* Authentication controls
+* Access management
+* Activity logging
+* Audit support
+* Administrative oversight
+* Secure communication channels
+* Permission management
+* Data protection mechanisms
 
 Organizations can use these features to maintain accountability and support governance requirements.
 
@@ -169,18 +169,18 @@ Educational and Research Applications
 
 Beyond enterprise environments, WHITE-HAT-STOAT can support educational institutions, cybersecurity academies, research organizations, and training centers.
 
-Potential applications include:
+# Potential applications include:
 
-University cybersecurity programs
-Research projects
-Security workshops
-Professional development programs
-Cyber defense exercises
-Security awareness initiatives
+* University cybersecurity programs
+* Research projects
+* Security workshops
+* Professional development programs
+* Cyber defense exercises
+* Security awareness initiatives
 
 The platform provides practical experience opportunities while emphasizing ethical and authorized cybersecurity practices.
 
-Conclusion
+# Conclusion
 
 WHITE-HAT-STOAT is a versatile cybersecurity operations platform designed for ethical security professionals, educational institutions, security teams, and organizations seeking to improve their defensive capabilities. By integrating with popular communication platforms such as Discord, Slack, Telegram, Google Chat, iMessage, and a dedicated web application, the platform delivers centralized security operations, monitoring, incident coordination, training support, and cybersecurity awareness capabilities.
 
@@ -195,7 +195,13 @@ git clone https://github.com/Iankulani/white_hat_stoat.git
 cd white_hat_stoat
 ```
 # Build and run with Docker Compose
+```bash
 docker-compose up -d
+```
 
 # Access web dashboard
+```bash
 open http://localhost:5000
+````
+
+# Star History
