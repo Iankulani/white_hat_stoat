@@ -25,7 +25,7 @@ WHITE-HAT-STOAT is a modern cybersecurity platform designed to help security pro
 
 The primary goal of WHITE-HAT-STOAT is to improve organizational security readiness by providing security teams with a centralized platform for monitoring, assessment, training, incident response coordination, and cybersecurity awareness activities. The platform is designed for ethical and authorized use only and supports cybersecurity professionals in identifying, understanding, and mitigating security risks within their environments.
 
-Centralized Security Operations
+# Centralized Security Operations
 
 Modern organizations use multiple communication channels and collaboration platforms. WHITE-HAT-STOAT bridges these platforms by providing a centralized command and management layer that enables authorized personnel to perform security-related tasks from a single interface.
 
@@ -67,7 +67,7 @@ Security Operations Dashboard
 
 The web application includes a comprehensive dashboard designed for security teams and administrators. The dashboard provides a centralized view of security information, operational metrics, alerts, and monitoring data.
 
-# Dashboard features include:
+# Dashboard features include
 
 * Real-time security notifications
 * Incident management views
@@ -101,7 +101,7 @@ Incident Response Coordination
 
 Effective incident response requires communication, visibility, and coordination. WHITE-HAT-STOAT helps security teams manage incidents by providing collaboration features that support organized response efforts.
 
-# Incident response capabilities include:
+# Incident response capabilities include
 
 * Alert distribution
 * Team coordination
@@ -151,7 +151,7 @@ Collaboration and Team Management
 
 Cybersecurity operations are often collaborative efforts involving multiple stakeholders. WHITE-HAT-STOAT provides tools that facilitate communication and teamwork.
 
-# Collaboration features include:
+# Collaboration features include
 
 * Shared workspaces
 * Team notifications
