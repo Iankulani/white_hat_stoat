@@ -1,5 +1,7 @@
 # WHITE-HAT-STOAT
 
+<div align="center">
+
 <img width="1536" height="1024" alt="f24309d0-0079-42cb-ae46-dc8367ee252c" src="https://github.com/user-attachments/assets/922270a3-84ff-4c33-931b-885742b6d9a7" />
 
 [![GitHub stars](https://img.shields.io/github/stars/Iankulani/white_hat_stoat?style=for-the-badge&logo=github)](https://github.com/Iankulani/white_hat_stoat/stargazers)
@@ -18,6 +20,9 @@
 [![Pull Requests](https://img.shields.io/github/issues-pr/Iankulani/white_hat_stoat?style=for-the-badge&logo=github)](https://github.com/Iankulani/white_hat_stoat/pulls)
 [![Repo Size](https://img.shields.io/github/repo-size/Iankulani/white_hat_stoat?style=for-the-badge&logo=github)](https://github.com/Iankulani/white_hat_stoat)
 [![Code Size](https://img.shields.io/github/languages/code-size/Iankulani/white_hat_stoat?style=for-the-badge&logo=github)](https://github.com/Iankulani/white_hat_stoat)
+
+
+</div>
 
 # Advanced Cybersecurity Command & Control Platform
 
