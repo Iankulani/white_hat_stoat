@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img width="1536" height="1024" alt="f24309d0-0079-42cb-ae46-dc8367ee252c" src="https://github.com/user-attachments/assets/922270a3-84ff-4c33-931b-885742b6d9a7" />
+<img width="460" height="460" alt="f24309d0-0079-42cb-ae46-dc8367ee252c" src="https://github.com/user-attachments/assets/922270a3-84ff-4c33-931b-885742b6d9a7" />
 
 [![GitHub stars](https://img.shields.io/github/stars/Iankulani/white_hat_stoat?style=for-the-badge&logo=github)](https://github.com/Iankulani/white_hat_stoat/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/Iankulani/white_hat_stoat?style=for-the-badge&logo=github)](https://github.com/Iankulani/white_hat_stoat/network)
