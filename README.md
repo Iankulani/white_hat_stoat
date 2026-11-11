@@ -24,8 +24,6 @@
 
 </div>
 
-# Advanced Cybersecurity Command & Control Platform
-
 WHITE-HAT-STOAT is a modern cybersecurity platform designed to help security professionals, organizations, educational institutions, and cyber defense teams conduct authorized security operations, security monitoring, cyber drills, and cybersecurity training activities. The platform provides a unified command environment that enables security teams to securely execute approved security commands and workflows through popular communication and collaboration platforms, including Discord, Slack, Telegram, iMessage, Google Chat, and a dedicated web application.
 
 The primary goal of WHITE-HAT-STOAT is to improve organizational security readiness by providing security teams with a centralized platform for monitoring, assessment, training, incident response coordination, and cybersecurity awareness activities. The platform is designed for ethical and authorized use only and supports cybersecurity professionals in identifying, understanding, and mitigating security risks within their environments.
@@ -210,7 +208,6 @@ With a focus on security monitoring, cyber defense, education, collaboration, an
 ### Quick Start (Docker)
 
 ```bash
-# Clone repository
 git clone https://github.com/Iankulani/white_hat_stoat.git
 cd white_hat_stoat
 ```
